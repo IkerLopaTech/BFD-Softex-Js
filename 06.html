@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title>Exercício 06 lista</title>
+</head>
+
+<body>
+	
+</body>
+
+<script>
+document.write("6. Escrever um algoritmo que lê 3 valores a, b, c, e calcula e escreve a média ponderada com peso 5 para o maior dos 3 valores e peso 2.5 para os outros dois. ");
+let a = parseFloat(prompt("Digite a primeira nota: "));
+let b = parseFloat(prompt("Digite o segunda nota: "));
+let c = parseFloat(prompt("Digite o terceira nota: "));
+let maior = parseFloat (a);
+let media;
+
+	if (a >= b && a >= c){
+		media = (a*5 + b*2.5 + c*2.5) /10;
+}	else if (b >= a && b>=c){
+		media = (b*5 + a*2.5 + c*2.5) /10;
+}	else{
+		media = (c*5 + a*2.5 + b*2.5) /10;  
+}
+	document.write("<br> A média do aluno foi: ", media);
+</script>
+</html>

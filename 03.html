@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title>Exercício 03 lista</title>
+</head>
+
+<body>
+	
+</body>
+
+<script>
+document.write("Calcule a média aritmética das 3 notas de um aluno e mostre, além do valor da média, uma mensagem de Aprovado, caso a média seja igual ou superior a 6, ou a mensagem Reprovado,caso contrário. ");
+
+nota01 = parseFloat(7.0);
+nota02 = parseFloat(6.5);
+nota03 = parseFloat(6.5);
+media = (nota01+nota02+nota03)/3;
+let mediaArredondada = media.toFixed(2)
+
+	if (media => 6){
+		document.write("<br>A média do aluno foi de: ", +mediaArredondada, " e ele está aprovado.");
+}
+	else{
+		document.write("<br>A média do aluno foi de: ", +mediaArredondada, " e ele está reprovado.");
+}			
+
+</script>
+</html>

@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title>Exercício 07 lista</title>
+</head>
+
+<body>
+	
+</body>
+
+<script>
+document.write("7. Escrever um algoritmo que lê o número de um vendedor de uma empresa, seu salário fixo e o total  das vendas por ele efetuadas. Sabe-se que cada vendedor recebe um salário fixo, mais uma comissão proporcional às vendas por ele efetuadas. A comissão é de 3% sobre o total das vendas até 10.000 e 5% sobre o que ultrapassa este valor. Escrever o número do vendedor, o total de suas vendas, seu salário fixo e seu salário total. ");
+
+let numero = parseInt(prompt("Digite o número do vendedor:"));
+let salario = parseFloat(prompt("Insira o salário do vendedor: "));
+let vendas = parseFloat(prompt("Insira o valor das vendas desse vendedor: "));
+let total;
+	
+	if (vendas <= 10000){
+		total = (vendas*0.03) + salario;
+}	else if (vendas >= 1000){
+		total = (vendas*0.05) + salario;
+}
+
+	document.write("<br>O vendedor número: " +numero, ("."), ("<br>Realizou um total de R$:") +vendas, (" em vendas."), ("<br>Seu salário fixo é de R$: ") +salario, ("."), ("<br>E com a comissão, o valor do salário será de R$: "), +total, ("."));
+</script>
+</html>

@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title>Exercício 09 lista</title>
+</head>
+
+<body>
+	
+</body>
+
+<script>
+document.write("Elabore um algoritmo que dada a idade de um nadador classifica-o em uma das seguintes categorias: • infantil A = 5 - 7 anos • infantil B = 8-10 anos • juvenil A = 11-13 anos • juvenil B = 14-17 anos • adulto = maiores de 18 anos");
+
+let idade = parseInt(prompt("Informe a idade do nadador: "));
+	
+	if (idade >= 5 && idade <= 7){
+		document.write("<br>O nadador está na categoria infantil A = 5-7 anos.");
+}	else if (idade >= 8 && idade <= 10){
+		document.write("<br>O nadador está na categoria infantil B = 8-10 anos.");
+}	else if (idade >= 11 && idade <= 13){
+		document.write("<br>O nadador está na categoria juvenil A = 11-13 anos.");
+}	else if (idade >= 14 && idade <= 17){
+		document.write("<br>O nadador está na categoria juvenil B = 14-17 anos.");
+}	else if (idade >= 18){
+		document.write("<br>O nadador está na categoria adulto = maiores de 18 anos.");
+}		
+</script>
+</html>

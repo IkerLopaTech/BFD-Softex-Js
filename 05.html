@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title>Exercício 05 lista</title>
+</head>
+
+<body>
+	
+</body>
+
+<script>
+document.write("5. Escreva um algoritmo que leia três valores inteiros e mostre-os em ordem decrescente. ");
+let a = parseInt(prompt("Digite o primeiro número: "));
+let b = parseInt(prompt("Digite o segundo número: "));
+let c = parseInt(prompt("Digite o terceiro número: "));
+let numeros = [a,b,c];
+
+	numeros.sort((x,y) => y-x);
+	
+	document.write("Os valores em ordem crescente são: " + numeros);
+</script>
+</html>

@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title>Exercício 04 lista</title>
+</head>
+
+<body>
+	
+</body>
+
+<script>
+document.write("Faça um algoritmo que leia um nº inteiro e mostre uma mensagem indicando se este número é parou ímpar, e se é positivo ou negativo. <br>");
+
+let n1 = parseInt(prompt("Insira um número inteiro: "));
+
+	if ((n1 % 2 == 0) && (n1 > 0)) {
+    		document.write("O número é par e positivo");
+} 
+	else if ((n1 % 2 == 0) && (n1 < 0)) {
+  	  	document.write("O número é par e negativo");
+} 
+	else if ((n1 % 2 != 0) && (n1 > 0)) {
+    		document.write("O número é ímpar e positivo");
+} 
+	else if ((n1 % 2 != 0) && (n1 < 0)) {
+   		 document.write("O número é ímpar e negativo");
+}
+	else {
+    		document.write("O número é zero (neutro e par)");
+}
+</script>
+</html>

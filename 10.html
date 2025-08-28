@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title>Exercício 10 lista</title>
+</head>
+
+<body>
+	
+</body>
+
+<script>
+document.write("Uma empresa concederá um aumento de salário aos seus funcionários, variável de acordo com o cargo, conforme a tabela a seguir. Faça um algoritmo que leia o salário e o cargo de um funcionário e calcule o novo salário. Se o cargo do funcionário não estiver na tabela, ele deverá, então, receber 40% de aumento. Mostre o salário antigo, o novo salário e a diferença.<br>");
+
+let salario = parseFloat(prompt("Informe o salário atual do funcionário: "));
+let cargo = parseInt(prompt("Informe o cargo do funcionario, sendo 101 para gerente, 102 para engenheiro e 103 para técnico. Caso não seja nenhum desses cargos, insira um número qualquer"));
+let aumento;
+let novoSalario;
+	
+	if (cargo == 101){
+		novoSalario = salario + (salario*0.1);
+}	else if (cargo == 102){
+		novoSalario = salario + (salario*0.2);
+}	else if (cargo == 103){
+		novoSalario = salario + (salario*0.3);
+}	else{
+		novoSalario = salario + (salario*0.4);
+}
+
+aumento = (novoSalario - salario);
+
+	document.write("<br>O salário antigo do cargo " +cargo, " era de R$: " +salario, "<br>Com o aumento o salário será de R$: " +novoSalario, "<br>O aumento recebido foi de R$: " +aumento);	
+</script>
+</html>

@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title>Exercício 11 lista</title>
+</head>
+
+<body>
+	
+</body>
+
+<script>
+document.write("Elaborar um algoritmo que lê 3 valores a,b,c e verifica se eles formam ou não um triângulo. Supor que os valores lidos são inteiros e positivos. Caso os valores formem um triângulo, calcular e escrever o tipo de triângulo (escaleno, isósceles ou eqüilátero). Se não formam triângulo escrever os valores lidos. Propriedade – O comprimento de cada lado de um triângulo é menor do que a soma dos comprimentos dos outros dois lados. Definição 1 – Triângulo equilátero é o triângulo que tem os comprimentos dos três lados iguais. Definição 2 – Triângulo isósceles é o triângulo que tem os comprimentos de dois lados iguais. Portanto, todo triângulo equilátero é também isósceles. Definição 3 – Triângulo escaleno é o triângulo que tem os comprimentos dos três lados diferentes. ");
+
+let a = parseInt(prompt("Informe o valor A do triângulo: "));
+let b = parseInt(prompt("Informe o valor B do triângulo: "));
+let c = parseInt(prompt("Informe o valor C do triângulo: "));
+
+	if ( a < b + c && b < a + c && c < a + b){
+		if ( a == b && b == c){
+			document.write("<br>Os lados formam um triângulo equilátero");
+		} else if ( a == b || a== c || b == c){
+			document.write ("<br>Os lados formam um triângulo isóceles");
+		} else{
+			document.write ("<br>Os lados fomam um triângulo escaleno");	
+}	} else{
+		document.write ("Os lados " +a+ "," +b+ "," +c+ " não formam um triângulo");
+}
+
+</script>
+</html>
