@@ -1,0 +1,34 @@
+<html>
+<head>
+	<title>Exercício 09 lista</title>
+</head>
+
+<body>
+<script>
+document.write("Tendo o conceito (A, B, C, ou D) individual de 38 alunos, construa um algoritmo que calcule e escreva o total de cada conceito.");
+
+a = parseInt(0);
+b = parseInt(0);
+c = parseInt(0);
+d = parseInt(0);
+cont = 1;
+		while (cont <= 2){
+		nota = parseFloat(prompt("Insira a nota do aluno: "));
+		if (nota >= 9.0){
+			a++;
+}		else if(nota > 7.5 && nota < 9.0){
+			b++;
+}		else if(nota > 6.0 && nota < 7.5){
+			c++;
+}		else if(nota < 4.0 && nota < 6.0){
+			d++;
+}
+		cont++;
+	}
+	
+document.write("<br>O valor total dos conceitos foi de:"+"<br>A:"+a+"<br>B:"+b+"<br>C:"+c+"<br>D:",+d);
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title>Exercício 17 lista</title>
+</head>
+
+<body>
+<script>
+document.write("Fazer um algoritmo para calcular e escrever o valor do número z z = 4 – 4/3 + 4/5 – 4/7 + 4/9 – 4/11 + ... + 4/100");
+
+let i = parseInt(1);
+let z = parseFloat(4);
+
+while (i<((100/2)+1)){
+		if(i%2 !=0){
+			z += 4/(i*2-1);
+	}	else{
+			z -= 4/(i*2-1);
+	}	i++
+}
+
+document.write("O valor de Z é:"+z);
+</script>
+
+</body>
+
+</html>

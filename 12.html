@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title>Exercício 12 lista</title>
+</head>
+
+<body>
+<script>
+document.write("Construa um algoritmo que, dado um conjunto de valores inteiros e positivos, determine qual o menor e o maior valor. O final do conjunto de valores é conhecido através do valor –1, que não deve ser considerado.");
+
+valor1 = parseInt(prompt("Insira um valor inteiro e positivo: "));
+valor2 = parseInt(prompt("Insira outro valor inteiro e positivo: "));
+menor = parseInt(0);
+maior = parseInt(0);
+	
+	if(valor1<valor2){
+		menor = valor1;
+		maior = valor2;
+		}
+	else{
+		menor = valor2;
+		maior = valor1;
+		}
+document.write("<br>O menor valor é: "+menor+"<br>E o maior valor é: "+maior);
+		
+</script>
+
+</body>
+
+</html>

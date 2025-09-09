@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title>Exercício 07 lista</title>
+</head>
+
+<body>
+<script>
+document.write("Para cada nota de compra, tem-se o nome do produto comprado, o valor e o imposto. Faça um algoritmo que escreva o valor total bruto, o imposto total cobrado e o valor total líquido de todas as notas. Considere 500 notas");
+
+totalBruto = parseFloat();
+impostoTotal = parseFloat();
+totalLiquido = parseFloat();
+cont = 1;
+
+		while (cont <= 2){
+		valor = parseFloat(prompt("Insira o valor total do produto: "));
+		imposto = parseFloat(prompt("Insira o valor de imposto cobrado no produto: "));
+		totalBruto = totalBruto + valor;
+		impostoTotal = impostoTotal + imposto;
+		totalLiquido = totalBruto - impostoTotal;
+		cont++;
+	}
+	
+document.write("O valor total bruto foi de:" +totalBruto+
+</script>
+
+</body>
+
+</html>

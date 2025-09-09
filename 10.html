@@ -1,0 +1,24 @@
+<html>
+<head>
+	<title>Exercício 10 lista</title>
+</head>
+
+<body>
+<script>
+document.write("Tendo o consumo diário de uma residência durante um mês (30dias), construa um algoritmo que calcule e escreva a média consumida por dia. ");
+
+media = parseFloat(0);
+
+	for(let i =1; i<=30; i++){
+		dia = parseFloat(prompt("Insira o consumo do dia "+i+": "));
+		media += dia;}
+		
+	media = media/30;
+	
+document.write("<br>A média de consumo por dia foi de: "+media);
+		
+</script>
+
+</body>
+
+</html>

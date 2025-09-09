@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>Exercício 06 lista</title>
+</head>
+
+<body>
+<script>
+document.write("Faça um algoritmo para ler um valor X e calcular Y = X+2X+3X+4X+5X+…+20X");
+
+x = parseInt(prompt("Insira um valor para X: "));
+cont = 0;
+y = 0;
+resultado = 0;
+	while (cont <= 20){
+		y = cont*x;
+		cont++;
+		resultado = resultado + y;
+		document.write(("<br>Valor de Y:")+y);
+	}	
+document.write("<br>O resultado final da soma de X é igual a:"+resultado);
+</script>
+
+</body>
+
+</html>
